@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import SearchBox from "@/components/Search/SearchBox";
 
 export const metadata = {
-  title: "IMDb",
-  description: "Create IMDb clone by next.js and tailwind css",
+  title: "Chachos Shonens",
+  description: "El mejor catálogo para encontrar tu próximo manga favorito.",
 };
 
 export default function RootLayout({ children }) {

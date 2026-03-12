@@ -1,15 +1,14 @@
 "use client";
-import React from "react";
+
 import { ThemeProvider } from "next-themes";
 
-const Provider = ({ children }) => {
+export default function Providers({ children }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <div className="dark:bg-gray-700 dark:text-gray-200 transition-colors delay-150 bg-white text-gray-700 min-h-screen selection:bg-cyan-500 selection:text-white">
+      {/* Aquí es donde forzamos el Negro puro (#000000) para el modo oscuro */}
+      <div className="dark:bg-black dark:text-gray-200 text-gray-700 transition-colors duration-300 min-h-screen select-none">
         {children}
       </div>
     </ThemeProvider>
   );
-};
-
-export default Provider;
+}

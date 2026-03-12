@@ -2,37 +2,34 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-6xl m-auto p-6 leading-relaxed">
-      <h1 className="text-cyan-500 font-bold mb-4 text-3xl">About</h1>
-      <div>
-        <p>
-          Welcome to our movie database website! We are a team of passionate
-          movie enthusiasts who have come together to create a one-stop
-          destination for all your movie-related needs. Our website is designed
-          to provide you with a comprehensive database of movies from all around
-          the world, along with the latest news, reviews, and trailers. Our
-          movie database is constantly updated with new releases, ensuring that
-          you have access to the latest and greatest in the world of cinema. You
-          can search for movies by title, director, actor, genre, or release
-          date, making it easy to find the perfect movie for any occasion.
+    <div className="max-w-6xl mx-auto p-4 space-y-8 mt-8 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+      <h1 className="text-3xl font-bold text-green-700 dark:text-green-500 mb-6 border-b border-green-700 dark:border-green-500 pb-2 transition-colors">
+        Acerca de Chachos Shonens
+      </h1>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-green-600 dark:text-green-400 transition-colors">El Proyecto</h2>
+        <p className="text-lg leading-relaxed mb-4">
+          <strong>Chachos Shonens</strong> es un catálogo interactivo diseñado para explorar el inmenso mundo del manga con una interfaz rápida, minimalista y de alto contraste. 
+          La plataforma consume datos en tiempo real para mostrar los títulos más populares, obras en emisión y detalles precisos de cada manga, como su sinopsis, calificación, volúmenes y estado de publicación.
         </p>
-        <p className="my-4">
-          In addition to our extensive movie database, we also offer a platform
-          for movie lovers to connect and share their thoughts on the latest
-          releases. Our community section includes a forum where you can discuss
-          your favorite films with like-minded individuals and read reviews and
-          ratings from other users. We also have a section dedicated to movie
-          news and trailers, keeping you updated with the latest happenings in
-          the world of cinema.
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-green-600 dark:text-green-400 transition-colors">Tecnologías Utilizadas</h2>
+        <ul className="list-disc list-inside text-lg space-y-2 ml-2">
+          <li><strong>Frontend:</strong> Construido con <em>Next.js</em> y <em>React</em> para un renderizado rápido, eficiente y un enrutamiento dinámico.</li>
+          <li><strong>Estilos:</strong> Interfaz diseñada con <em>Tailwind CSS</em>, implementando un sistema dual de modo claro y un modo oscuro puro para lectura cómoda.</li>
+          <li><strong>Consumo de API:</strong> Integración asíncrona con <em>Jikan (MyAnimeList REST API)</em> para la obtención masiva de datos sin necesidad de administrar bases de datos locales.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-green-600 dark:text-green-400 transition-colors">Sobre el Desarrollador</h2>
+        <p className="text-lg leading-relaxed">
+          Este catálogo fue desarrollado como un proyecto práctico de ingeniería de software. Como estudiante de ingeniería en la Universidad de Guadalajara, mi enfoque está en crear arquitecturas limpias, tanto en el consumo de APIs en el frontend como en el desarrollo de sistemas robustos y eficientes en el backend. Chachos Shonens refleja mi interés en combinar código bien estructurado con interfaces visualmente atractivas.
         </p>
-        <p>
-          Thank you for visiting our website and we hope you enjoy your time
-          browsing through our movie database. If you have any feedback or
-          suggestions, please feel free to contact us. We are always looking for
-          ways to improve and enhance the user experience on our website. Happy
-          browsing!
-        </p>
-      </div>
+      </section>
     </div>
   );
 };

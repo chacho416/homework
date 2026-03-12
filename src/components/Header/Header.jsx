@@ -8,19 +8,24 @@ import PageMode from "./PageMode";
 const Header = () => {
   return (
     <header className="flex justify-between items-center p-6 max-w-6xl m-auto">
-      <div className="flex">
-        <PagesLink url="/" title="home" Icon={AiFillHome} />
-        <PagesLink url="/about" title="about" Icon={BsInfoCircleFill} />
+      <div className="flex gap-2">
+        <PagesLink url="/" title="INICIO" Icon={AiFillHome} />
+        <PagesLink url="/about" title="INFO" Icon={BsInfoCircleFill} />
       </div>
+
 
       <div className="flex items-center space-x-4">
         <PageMode />
+        
         <Link href="/">
-          <h2>
-            <span className="text-2xl bg-cyan-500 px-2 py-1 rounded-lg text-white font-bold mr-1">
-              IMDb
+          <h2 className="flex items-center">
+            <span className="text-2xl bg-green-700 dark:bg-green-500 px-2 py-1 rounded-lg text-white dark:text-black font-bold mr-1 transition-colors">
+              Chachos
             </span>
-            <span className="text-xl hidden sm:inline">Clone</span>
+            {/* Aquí cambiamos a Shonens */}
+            <span className="text-xl hidden sm:inline font-semibold">
+              Shonens
+            </span>
           </h2>
         </Link>
       </div>

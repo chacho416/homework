@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html::-webkit-scrollbar {
-  display: none;
-}
-
-html {
-  scrollbar-width: none;
+@layer base {
+  /* Modo Claro: Fondo clarito y texto oscuro */
+  body {
+    @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  }
+  
+  /* Modo Oscuro: Negro puro (#000000) y texto claro */
+  .dark body {
+    @apply bg-black text-gray-100;
+  }
 }
